@@ -1,0 +1,13 @@
+<!-- contact.component.html -->
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" ngModel>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" ngModel>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" ngModel></textarea>
+
+  <button type="submit">Send</button>
+</form>
