@@ -1,0 +1,54 @@
+<router-outlet></router-outlet>
+<!-- The <nav> tag is a semantic HTML5 element, it's not necessary for the layout,
+     but it helps with accessibility by indicating to screen readers that this
+     section of the page is a navigation bar. -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- The "container-fluid" class provides a full-width container with a responsive layout. -->
+
+  <div class="container-fluid">
+
+    <!-- The "navbar-brand" class is usually used for the website logo or name.
+         The routerLink directive is an Angular feature that tells the router
+         where to navigate when this link is clicked. -->
+
+    <a class="navbar-brand" routerLink="/home">My Portfolio</a>
+
+    <!-- The "collapse navbar-collapse" class is used to collapse the navbar
+         into a dropdown menu in smaller screens (mobile view). -->
+
+    <div class="collapse navbar-collapse">
+
+      <!-- The "navbar-nav" class is used to define the area of the navbar that
+           will contain navigation links. "me-auto mb-2 mb-lg-0" are spacing
+           classes that apply margin to the element. -->
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Each <li> tag defines a list item in the navigation menu, and
+             the "nav-item" class is used to style it. -->
+
+        <li class="nav-item">
+
+          <!-- The "nav-link" class is used to style the navigation links.
+               Again, routerLink is used to specify the path that the link should navigate to. -->
+
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+
+        <!-- The same structure is repeated for each navigation link. -->
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

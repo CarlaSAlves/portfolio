@@ -13,9 +13,4 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm) {
-    console.log(form.value)
-    // aqui você normalmente enviaria uma solicitação HTTP para seu servidor de backend
-  }
-
 }
