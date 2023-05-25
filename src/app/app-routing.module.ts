@@ -6,11 +6,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // This will redirect any unknown routes to the home component
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' } // This will redirect any unknown routes to the home component
+  { path: 'skills', component: SkillsComponent }
+
 ];
 
 @NgModule({
