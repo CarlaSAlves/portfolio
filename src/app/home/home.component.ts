@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public name!: string;
+  public profession!: string;
+  public profileImage!: string;
+
+  constructor () { }
 
   ngOnInit(): void {
+
+    this.profileImage = 'assets/images/foto_profile.jpg' // replace with the path of your image
+    this.profession = "Softwere Developer"
+    this.name = 'Carla Alves'
   }
 
 }

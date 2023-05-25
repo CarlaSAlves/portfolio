@@ -1,1 +1,13 @@
-<p>home works!</p>
+
+<div class="container">
+<!--container that will center our content both vertically and horizontally using flexbox utilities.-->
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6 text-center">
+      <img [src]="profileImage"
+        alt="Profile Picture"
+        class="img-fluid rounded-circle w-50 mb-3">
+      <h1>{{name}}</h1>
+      <p class="lead">{{profession}}</p>
+    </div>
+  </div>
+</div>
