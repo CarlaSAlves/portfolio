@@ -1,35 +1,23 @@
 <!-- about.component.html -->
-
-
-<div class="container">
+<div class="container mt-5">
   <div class="row">
-     <p>Hi, I'm {{yourName}}!</p>
+
   <h1>About Me</h1>
-  <p>"Stepping into the world of software development has marked an exciting chapter in my diverse life journey.
-    Over the past two years, I've embraced the challenges and joys of learning to code,
-    fueling a passion for problem-solving and continual growth. As a budding Software Developer
-    with foundational knowledge in Angular framework, HTML, CSS and JS , I'm actively seeking a
-    role where I can deepen my skills, contribute to a dynamic team, and engage in meaningful projects." </p>
+  <p>Welcome to my journey in the world of software development. With a diverse background, I've embarked on a fascinating coding adventure over the past two years. It's been a challenging yet fulfilling journey, shaping a new passion for problem-solving and persistent growth. I am a Software Developer proficient in HTML, CSS, JS, and particularly the Angular framework. My mission? To deepen my expertise, contribute actively to a dynamic team, and engage in meaningful projects that make a difference.</p>
   </div>
 
-  <div class="col">
-    <h2> Skils</h2>
-    <ul>
-       <li>skill 1</li>
-       <li>skill 2</li>
-       <li>skill 3</li>
-
-    </ul>
+  <div class="row mt-5">
+    <div class="col">
+      <img [src]="profileImage"alt="Your name" class="img-fluid rounded-circle">
+    </div>
+    <div class="col">
+      <h2>Get To Know Me</h2>
+      <ul>
+        <li><strong>Email:</strong> carla@gmail.com</li>
+        <li><strong>Phone:</strong> 91 046 8899</li>
+        <li><strong>Language:</strong> Portuguese</li>
+      </ul>
+    </div>
   </div>
-   <div class="col">
-    <h2> Basic Information</h2>
-    <ul>
-       <li>Date Birthday:  29-12-74</li>
-       <li>email: </li>
-       <li>phone</li>
-       <li>lenguage: Portuguese</li>
-
-    </ul>
-  </div>
-
 </div>
+

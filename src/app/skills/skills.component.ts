@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  public skills: string[] = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
+
+  constructor () { }
 
   ngOnInit(): void {
   }
