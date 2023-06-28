@@ -33,10 +33,12 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  onReset() {
+  resetForm() {
     this.contactForm.reset();
     this.formSubmitted = false;
   }
+
+
 
   errorlValidator(controlName: string, errorName: string): boolean {
     const control = this.contactForm.get(controlName);
