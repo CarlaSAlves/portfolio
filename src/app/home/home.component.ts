@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   public profession!: string;
   public profileImage!: string;
   public yourName!: string;
+  public aboutMe!: string;
+
 
   constructor () { }
 
@@ -18,8 +20,8 @@ export class HomeComponent implements OnInit {
 
     this.profileImage = 'assets/images/foto_profile.jpg' // replace with the path of your image
     this.profession = "Softwere Developer"
-    this.name = 'Carla Alves'
-    this.yourName = 'Carla Alves'
+    this.name = 'Carla A'
+    this.yourName = 'Carla A'
   }
 
 }

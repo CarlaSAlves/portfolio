@@ -1,5 +1,20 @@
 <div class="container mt-5">
   <h1>My Skills</h1>
+        <div *ngFor="let skillBar of skillsBar" class="my-3">
+        <h6>{{ skillBar.name }}</h6>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            [style.width]="skillBar.level + '%'"
+            aria-valuenow="skillBar.level"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            {{ skillBar.level }}%
+          </div>
+        </div>
+      </div>
   <div class="row">
     <div class="col-md-4" *ngFor="let skill of skills">
       <mat-card class="mt-3">
